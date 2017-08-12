@@ -1,5 +1,7 @@
 # JSON Logger
 
+[![Build Status](https://travis-ci.org/michaelruocco/json-logger.svg?branch=master)](https://travis-ci.org/michaelruocco/json-logger)
+
 This project builds upon the [JSON logger from savoirtech](https://github.com/savoirtech/slf4j-json-logger). It allows
 a client to provide a gson instance in order to perform json formatting for custom object types
 as well as being able to configure the logger to configure environment variables to be automatically
