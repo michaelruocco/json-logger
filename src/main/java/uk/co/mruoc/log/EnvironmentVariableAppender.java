@@ -21,7 +21,7 @@ public class EnvironmentVariableAppender implements VariableAppender {
     @Override
     public JsonLogger append(JsonLogger jsonLogger) {
         for (String variableName : environmentVariableNames)
-            jsonLogger = append(jsonLogger, variableName);
+            append(jsonLogger, variableName);
         return jsonLogger;
     }
 

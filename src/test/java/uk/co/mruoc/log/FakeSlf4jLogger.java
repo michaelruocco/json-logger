@@ -22,27 +22,27 @@ public class FakeSlf4jLogger implements org.slf4j.Logger {
 
     @Override
     public void trace(String msg) {
-
+        // intentionally blank
     }
 
     @Override
     public void trace(String format, Object arg) {
-
+        // intentionally blank
     }
 
     @Override
     public void trace(String format, Object arg1, Object arg2) {
-
+        // intentionally blank
     }
 
     @Override
     public void trace(String format, Object... arguments) {
-
+        // intentionally blank
     }
 
     @Override
     public void trace(String msg, Throwable t) {
-
+        // intentionally blank
     }
 
     @Override
@@ -52,27 +52,27 @@ public class FakeSlf4jLogger implements org.slf4j.Logger {
 
     @Override
     public void trace(Marker marker, String msg) {
-
+        // intentionally blank
     }
 
     @Override
     public void trace(Marker marker, String format, Object arg) {
-
+        // intentionally blank
     }
 
     @Override
     public void trace(Marker marker, String format, Object arg1, Object arg2) {
-
+        // intentionally blank
     }
 
     @Override
     public void trace(Marker marker, String format, Object... argArray) {
-
+        // intentionally blank
     }
 
     @Override
     public void trace(Marker marker, String msg, Throwable t) {
-
+        // intentionally blank
     }
 
     @Override
@@ -82,27 +82,27 @@ public class FakeSlf4jLogger implements org.slf4j.Logger {
 
     @Override
     public void debug(String msg) {
-
+        // intentionally blank
     }
 
     @Override
     public void debug(String format, Object arg) {
-
+        // intentionally blank
     }
 
     @Override
     public void debug(String format, Object arg1, Object arg2) {
-
+        // intentionally blank
     }
 
     @Override
     public void debug(String format, Object... arguments) {
-
+        // intentionally blank
     }
 
     @Override
     public void debug(String msg, Throwable t) {
-
+        // intentionally blank
     }
 
     @Override
@@ -112,27 +112,27 @@ public class FakeSlf4jLogger implements org.slf4j.Logger {
 
     @Override
     public void debug(Marker marker, String msg) {
-
+        // intentionally blank
     }
 
     @Override
     public void debug(Marker marker, String format, Object arg) {
-
+        // intentionally blank
     }
 
     @Override
     public void debug(Marker marker, String format, Object arg1, Object arg2) {
-
+        // intentionally blank
     }
 
     @Override
     public void debug(Marker marker, String format, Object... arguments) {
-
+        // intentionally blank
     }
 
     @Override
     public void debug(Marker marker, String msg, Throwable t) {
-
+        // intentionally blank
     }
 
     @Override
@@ -142,27 +142,27 @@ public class FakeSlf4jLogger implements org.slf4j.Logger {
 
     @Override
     public void info(String msg) {
-
+        // intentionally blank
     }
 
     @Override
     public void info(String format, Object arg) {
-
+        // intentionally blank
     }
 
     @Override
     public void info(String format, Object arg1, Object arg2) {
-
+        // intentionally blank
     }
 
     @Override
     public void info(String format, Object... arguments) {
-
+        // intentionally blank
     }
 
     @Override
     public void info(String msg, Throwable t) {
-
+        // intentionally blank
     }
 
     @Override
@@ -172,27 +172,27 @@ public class FakeSlf4jLogger implements org.slf4j.Logger {
 
     @Override
     public void info(Marker marker, String msg) {
-
+        // intentionally blank
     }
 
     @Override
     public void info(Marker marker, String format, Object arg) {
-
+        // intentionally blank
     }
 
     @Override
     public void info(Marker marker, String format, Object arg1, Object arg2) {
-
+        // intentionally blank
     }
 
     @Override
     public void info(Marker marker, String format, Object... arguments) {
-
+        // intentionally blank
     }
 
     @Override
     public void info(Marker marker, String msg, Throwable t) {
-
+        // intentionally blank
     }
 
     @Override
@@ -202,27 +202,27 @@ public class FakeSlf4jLogger implements org.slf4j.Logger {
 
     @Override
     public void warn(String msg) {
-
+        // intentionally blank
     }
 
     @Override
     public void warn(String format, Object arg) {
-
+        // intentionally blank
     }
 
     @Override
     public void warn(String format, Object... arguments) {
-
+        // intentionally blank
     }
 
     @Override
     public void warn(String format, Object arg1, Object arg2) {
-
+        // intentionally blank
     }
 
     @Override
     public void warn(String msg, Throwable t) {
-
+        // intentionally blank
     }
 
     @Override
@@ -232,27 +232,27 @@ public class FakeSlf4jLogger implements org.slf4j.Logger {
 
     @Override
     public void warn(Marker marker, String msg) {
-
+        // intentionally blank
     }
 
     @Override
     public void warn(Marker marker, String format, Object arg) {
-
+        // intentionally blank
     }
 
     @Override
     public void warn(Marker marker, String format, Object arg1, Object arg2) {
-
+        // intentionally blank
     }
 
     @Override
     public void warn(Marker marker, String format, Object... arguments) {
-
+        // intentionally blank
     }
 
     @Override
     public void warn(Marker marker, String msg, Throwable t) {
-
+        // intentionally blank
     }
 
     @Override
@@ -262,27 +262,27 @@ public class FakeSlf4jLogger implements org.slf4j.Logger {
 
     @Override
     public void error(String msg) {
-
+        // intentionally blank
     }
 
     @Override
     public void error(String format, Object arg) {
-
+        // intentionally blank
     }
 
     @Override
     public void error(String format, Object arg1, Object arg2) {
-
+        // intentionally blank
     }
 
     @Override
     public void error(String format, Object... arguments) {
-
+        // intentionally blank
     }
 
     @Override
     public void error(String msg, Throwable t) {
-
+        // intentionally blank
     }
 
     @Override
@@ -292,27 +292,27 @@ public class FakeSlf4jLogger implements org.slf4j.Logger {
 
     @Override
     public void error(Marker marker, String msg) {
-
+        // intentionally blank
     }
 
     @Override
     public void error(Marker marker, String format, Object arg) {
-
+        // intentionally blank
     }
 
     @Override
     public void error(Marker marker, String format, Object arg1, Object arg2) {
-
+        // intentionally blank
     }
 
     @Override
     public void error(Marker marker, String format, Object... arguments) {
-
+        // intentionally blank
     }
 
     @Override
     public void error(Marker marker, String msg, Throwable t) {
-
+        // intentionally blank
     }
 
     public void setTraceEnabled(boolean traceEnabled) {
