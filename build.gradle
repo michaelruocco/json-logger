@@ -1,0 +1,111 @@
+plugins {
+    id 'jacoco'
+    id 'com.github.kt3k.coveralls' version '2.8.1'
+    id 'com.github.ben-manes.versions' version '0.15.0'
+}
+
+group 'com.github.michaelruocco'
+version '1.0.0'
+
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'signing'
+apply plugin: 'jacoco'
+apply plugin: 'com.github.kt3k.coveralls'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'com.google.code.gson', name: 'gson', version: '2.8.1'
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'
+    compile group: 'com.savoirtech.logging', name: 'slf4j-json-logger', version: '2.0.2'
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile group: 'com.github.stefanbirkner', name: 'system-rules', version: '1.16.1'
+    testCompile group: 'org.assertj', name: 'assertj-core', version: '3.8.0'
+    testCompile group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.7.24'
+}
+
+jacocoTestReport {
+    reports {
+        xml.enabled = true
+        html.enabled = true
+    }
+}
+
+task sourcesJar(type: Jar, dependsOn: classes) {
+    classifier = 'sources'
+    from sourceSets.main.allSource
+}
+
+task javadocJar(type: Jar, dependsOn: javadoc) {
+    classifier = 'javadoc'
+    from javadoc.destinationDir
+}
+
+artifacts {
+    archives sourcesJar
+    archives javadocJar
+}
+
+gradle.taskGraph.whenReady { taskGraph ->
+    if (taskGraph.hasTask(uploadArchives)) {
+        signing {
+            required true
+            sign configurations.archives
+        }
+    }
+}
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            beforeDeployment { MavenDeployment deployment -> signing.signPom(deployment) }
+
+            repository(url: "https://oss.sonatype.org/service/local/staging/deploy/maven2/") {
+                authentication(userName: ossrhUsername, password: ossrhPassword)
+            }
+
+            snapshotRepository(url: "https://oss.sonatype.org/content/repositories/snapshots/") {
+                authentication(userName: ossrhUsername, password: ossrhPassword)
+            }
+
+            pom.project {
+                packaging 'jar'
+                name 'JSON Logger'
+                description 'Library to allow logging in json format and ability to config automatic logging of environment variables'
+                groupId 'com.github.michaelruocco'
+                artifactId 'json-logger'
+                version '1.0.0'
+                url 'https://github.com/michaelruocco/json-logger'
+
+                developers {
+                    developer {
+                        id 'mruoc'
+                        name 'Michael Ruocco'
+                        email 'michael.ruocco@hotmail.com'
+                    }
+                }
+
+                scm {
+                    connection 'scm:git:git@github.com/michaelruocco/json-logger.git'
+                    developerConnection 'scm:git:git@github.com/michaelruocco/json-logger.git'
+                    url 'git@github.com/michaelruocco/json-logger.git'
+                }
+
+                licenses {
+                    license {
+                        name 'BSD License'
+                        url 'http://www.opensource.org/licenses/bsd-license.php'
+                        distribution 'repo'
+                    }
+                }
+            }
+        }
+    }
+}
