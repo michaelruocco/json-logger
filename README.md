@@ -1,6 +1,7 @@
 # JSON Logger
 
 [![Build Status](https://travis-ci.org/michaelruocco/json-logger.svg?branch=master)](https://travis-ci.org/michaelruocco/json-logger)
+[![Coverage Status](https://coveralls.io/repos/github/michaelruocco/json-logger/badge.svg?branch=master)](https://coveralls.io/github/michaelruocco/json-logger?branch=master)
 
 This project builds upon the [JSON logger from savoirtech](https://github.com/savoirtech/slf4j-json-logger). It allows
 a client to provide a gson instance in order to perform json formatting for custom object types
