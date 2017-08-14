@@ -78,7 +78,7 @@ uploadArchives {
                 description 'Library to allow logging in json format and ability to config automatic logging of environment variables'
                 groupId 'com.github.michaelruocco'
                 artifactId 'json-logger'
-                version '1.0.0'
+                version '1.0.1'
                 url 'https://github.com/michaelruocco/json-logger'
 
                 developers {
