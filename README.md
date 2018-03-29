@@ -2,8 +2,8 @@
 
 [![Build Status](https://travis-ci.org/michaelruocco/json-logger.svg?branch=master)](https://travis-ci.org/michaelruocco/json-logger)
 [![Coverage Status](https://coveralls.io/repos/github/michaelruocco/json-logger/badge.svg?branch=master)](https://coveralls.io/github/michaelruocco/json-logger?branch=master)
+[![Maven Central](https://img.shields.io/maven-metadata/v/http/central.maven.org/maven2/com/github/michaelruocco/json-logger/maven-metadata.xml.svg)](http://repo1.maven.org/maven2/com/github/michaelruocco/json-logger)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/7b036a36ec404cb78a17a021eee5cffe)](https://www.codacy.com/app/michaelruocco/json-logger?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=michaelruocco/json-logger&amp;utm_campaign=Badge_Grade)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.michaelruocco/json-logger/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.michaelruocco/json-logger)
 
 This project builds upon the [JSON logger from savoirtech](https://github.com/savoirtech/slf4j-json-logger). It allows
 a client to provide a gson instance in order to perform json formatting for custom object types
